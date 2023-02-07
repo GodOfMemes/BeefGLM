@@ -1,0 +1,20 @@
+FileVersion = 1
+
+[Project]
+Name = "BeefGLM"
+
+[Configs.Debug.Win64]
+LibPaths = ["$(ProjectDir)/lib/cglm.lib"]
+PostBuildCmds = ["CopyToDependents(\"$(ProjectDir)/lib/cglm-0.dll\")"]
+
+[Configs.Release.Win64]
+LibPaths = ["$(ProjectDir)/lib/cglm.lib"]
+PostBuildCmds = ["CopyToDependents(\"$(ProjectDir)/lib/cglm-0.dll\")"]
+
+[Configs.Paranoid.Win64]
+LibPaths = ["$(ProjectDir)/lib/cglm.lib"]
+PostBuildCmds = ["CopyToDependents(\"$(ProjectDir)/lib/cglm-0.dll\")"]
+
+[Configs.Test.Win64]
+LibPaths = ["$(ProjectDir)/lib/cglm.lib"]
+PostBuildCmds = ["CopyToDependents(\"$(ProjectDir)/lib/cglm-0.dll\")"]

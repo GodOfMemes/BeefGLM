@@ -24,6 +24,4 @@ static
 	typealias Mat4 = Vector4[4];
 
 	typealias Quaterion = Vector4;
-	typealias Transform = Mat4;
-	typealias Transform2D = Mat3;
 }
